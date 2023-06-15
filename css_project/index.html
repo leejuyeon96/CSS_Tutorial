@@ -1,0 +1,266 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    /* -----웹페이지 공백, 디펄트 설정----- */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+
+    }
+
+    button{
+        font-family: 'Lato', sans-serif;
+    }
+    h1{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+    /* -----웹페이지 공백----- */
+    /* -----색 설정----- */
+    .ba-gray-900 {
+        background-color: #121826;
+    }
+
+
+    .text-white{
+        color: white;
+    }
+    .text-black{
+        color: black;
+    }
+    /* -----색 설정----- */
+    /* -----가로에 적용되는 기능들----- */
+    .block{
+        display: block;
+    }
+    .inline-block{
+        display: inline-block;
+    }
+    .inline{
+        display: inline;
+    }
+    .hidden{
+        display: none;
+    }
+    .flex{
+        display: flex;
+    }
+    .justify-between{
+    justify-content: space-between;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .justify-right{
+        justify-content: right;
+    }
+    /* -----가로 기능들----- */
+    /* -----세로 기능들----- */
+    .items-center{
+        align-items: center;
+    }
+    /* -----세로 기능들----- */
+    /* ---- 마진 ----- */
+    .m-8{
+        margin: 8px;
+    }
+    /* ---- 마진 ----- */
+    /* ----- 패딩 ----- */
+    .p-8{
+        padding: 80px;
+    }
+    .py-18{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .py-8{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .px-16{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .py-12{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .px-28{
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+    .no-underline{
+        text-decoration: none;
+    }
+
+    .bg-brand-teal{
+        background-color: #539D98;
+;
+    }
+    .border-none{
+        border: none;
+    }
+
+    .rounded-full{
+        border-radius: 9999px;
+    }
+    .font-bold{
+        font-weight: bold;
+    }
+    
+    .uppercase{
+        text-transform: uppercase;
+    }
+
+    .text-sm{
+        font-size: 14px;
+    }
+
+    .w-full{
+        width: 100%;
+    }
+    .relative{
+        position: relative;
+    }
+    .z-10{
+        z-index: 10;
+    }
+    .object-cover{
+        object-fit: cover;
+    }
+    .text-brand-teal{
+        color: #90CAC7;
+    }
+    .bg-white{
+        background-color: white;
+    }
+    .text-brand-teal-dark{
+        color: #539d98;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .mx-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-36px{
+        font-size: 36px;
+    }
+    @media (min-width: 640px) {
+        .sm\:text-60px{
+            font-size: 60px;
+        }
+        
+       
+    }
+    /* ----- 패딩 ----- */
+    </style>
+</head>
+<!--색깔을 넣을때 
+    그냥 색깔입력
+    #ff0000 rrggbb 로 나눠져있고, 0-9 A-F 까지의 진함을 가짐
+    rgba(255, 99, 71, 0.5)
+    hsl(9, 100%, 64%)
+    이런거 가능
+-->
+<body>
+    <header class="flex justify-between py-18 relative z-10 mx-auto"
+    style="padding: 18px 12px; max-width: 1200px; ">
+        <div class="flex justify-center items-center">
+            
+            <img src="img/logo.svg" alt="" style="margin-right: 50px;">
+            <a href="" class="text-white py-8 px-16 no-underline">Pricing</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Courses</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Blog</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Forum</a>
+        </div>
+        <div class="flex items-center justify-right">
+            <a href="" class="text-white py-8 px-16 no-underline" style="margin-right: 12px;">Login</a>
+            <button class="bg-brand-teal text-white border-none 
+            rounded-full py-12 px-28 font-bold uppercase text-sm">Sign Up</button>
+        </div>
+
+    </header>
+
+    <section class="relative">
+        <video 
+        loop="loop"
+        autoplay="autoplay" 
+        playsinline
+        muted="muted" 
+        class="w-full object-cover absolute" 
+        style="height: 689px; top: -79px;"
+        src="video/galaxy.b6c8fb5.mp4">
+        
+        </video>
+        <div style="padding: 0px 12px; padding-top: 100px; max-width: 1200px;"
+        class="mx-auto">
+        
+        <!-- <img src="img/hero.png" alt="" class="w-full"> -->
+        <div class="relative z-10" style="max-width: 538px;">
+            <h1 class="text-white text-36px sm:text-60px">
+                Turbocharge Your <span class="text-brand-teal">
+                    development career</span></h1>
+            <p class="text-white" style="max-width: 449; font-size: 20px; margin-top: 30px;">Chris Courses provides students and professionals
+                 a college-level web development education.</p>
+            <button style="margin-top: 28px; border-radius: 4px;" class="bg-white text-brand-teal-dark border-none py-12 px-28">Get Started</button>
+        </div>
+        </div>
+    </section>
+</body>
+<!--
+    -block 가로 전체를 차지한다
+    -inline-block
+    -inline default로 이것을 사용 함 margin 이 적용이 안됨
+    -none 나중에 보여주고싶은 것이 있을때 사용 예를들어 팝업이나 드랍다운
+
+    -flex
+
+    - compute 선택시 그거에 대한 값 볼 수 있음 
+
+    부모인 div에다가 class를 지정해주면 나머지 자식들에게도 영향을 준다 (부모 우선 처리)
+
+    justify-content
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    가로 justify-content
+    세로 align-items
+    이 두가지들은 flex 가 있을때만 작동한다
+    flex 클래스에서 많은것을 알 필요 없음 쓰는것만 쓴다.
+
+    figma에 그래픽 같은 사진 저장 할 때는 svg 포맷으로 저장
+    figma에서 사진을 따 올때 링크를 다 올리면 더러우니까 따로 파일 하나 만들어서 저장 시키기 ex) logo.svg
+    padding and margin
+    오렌지 공간은 마진의 공간이고, 초록색은 padding의 공간이다.
+    마진은 해당하는것 밖에 여백을 만들고 패딩은 내부에 공간을 만든다
+    padding-top, bottom, left, right 가능
+    style="padding 18px 12px" 이렇게 넣으면 18이 위,아래 12가 왼오에 적용됨
+    style="padding 18px 12px 100px 200px" 이렇게 넣으면 18이 위 12가 오
+    100이 밑 200이 왼에 적용됨 위에서부터 시계방향으로 적용
+    각 버튼에 마진과 패딩 차이 
+    마진을 넣게되면 공간 지정이 안되면서 그부분은 아무 기능이 없는곳이 되고 패딩을 할 경우
+    공간이 지정되면서 클릭하기가 쉬워진다.
+
+    반복되는 설정들만 class화 해주면 된다.
+
+    구글 폰트에서 많은 폰트들이 있음
+    헤드에 링크를 받아오고
+    스타일에 정해진 양식대로 추가
+    바디에다가 추가하면 디폴트로 설정
+    font-weight는 100부터 900까지 점점 굵어진다.
+
+    띄워쓰기를 사용할 때 br을 사용하게돠면 글자가 보기 안좋게 되는 경우가 있다.
+    그래서 max-width를 지정해준다
+
+-->
